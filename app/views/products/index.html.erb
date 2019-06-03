@@ -1,1 +1,20 @@
-<h1>Buy only the best products here</h1>
+<br />
+<div class="hero">
+    <br />
+    <br />
+    <div class="frosty col-10 offset-1 text-center">
+            <h1>BUY AND SELL THE MOST RARE SHOES, CLOTHES, AND ACCESSORIES</h1>
+    </div>
+</div>
+
+<br />
+<div class="booyah-box col-10 offset-1">
+    <h1>Shoes</h1>
+    <%= simple_form_for root_path do |f| %>
+        <%= f.input :product %>
+        <%= f.input :cost %>
+        <br />
+        <%= f.submit "Post", class: 'btn btn-primary' %>
+    <% end %>
+    <br />
+</div>

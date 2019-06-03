@@ -1,0 +1,9 @@
+<div class="booyah-box col-10 offset-1">
+    <h1>Add Your New Clothes</h1>
+    <%= simple_form_for root_path do |f| %>
+        <%= f.input :product %>
+        <%= f.input :cost %>
+        <br />
+        <%= f.submit 'Post', class: 'btn btn-primary' %>
+    <% end %>
+</div>
